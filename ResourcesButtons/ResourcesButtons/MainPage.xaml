@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="ResourcesButtons.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ResourcesButtons"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <LinearGradientBrush x:Key="buttonBackgroundMP">
+            <GradientStop Offset="0" Color="Orange"/>
+            <GradientStop Offset="1" Color="Silver"/>
+        </LinearGradientBrush>
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <Button Name="btn1" Content="Color de MainPage" Background="{StaticResource buttonBackgroundMP}"/>
+            <Button Name="btn2" Content="Color de App" Background="{StaticResource buttonBackgroundAPP}"/>
+            <Button Name="btn3" Content="Color de diccionario" Background="{StaticResource buttonBackgroundDictionary}"/>
+        </StackPanel>
+    </Grid>
+</Page>
